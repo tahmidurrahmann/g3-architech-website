@@ -128,7 +128,32 @@ main{
     align-items: center;
     margin-top: 50px;
 }
-
+.fourth-section{
+    display: flex;
+    gap: 146px;
+}
+.desktop{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 20px;
+}
+.desktop-heading{
+    color: #131313;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.fourth-div{
+    margin-top: 169px;
+}
+.fourth-div .border{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.desktop-img img{
+    margin-top: 130px;
+}
 
 @media screen and (max-width:576px) {
     .image-container{
@@ -170,8 +195,18 @@ main{
         padding: 50px 80px 0px 80px;
         width: 80%;
     }
-    nav{
+    nav, .sponsors-img, .facts-container{
         flex-direction: column;
+    }
+    .sponsors-img img{
+        width: 165px;
+    }
+    .facts-container{
+        padding-left:  100px;
+        padding-right: 100px;
+    }
+    .sponsors-img{
+        gap: 40px;
     }
     .div{
         padding: 20px;
