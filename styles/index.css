@@ -92,6 +92,9 @@ main{
 .team-title{
     padding-left: 70px;
 }
+.second-section{
+    margin-top: 80px;
+}
 .facts-container{
     display: flex;
     justify-content: space-around;
@@ -101,6 +104,7 @@ main{
     border: 1px solid #FF900E;
     padding: 45px 35px 60px 35px;
     text-align: center;
+    margin-top: 80px;
 }
 .facts-heading{
     color: #424242;
@@ -114,8 +118,16 @@ main{
     font-size: 1.3rem;
     font-weight: 600;
 }
-
-
+.sponsors{
+    text-align: center;
+    margin-top: 150px;
+}
+.sponsors-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
 
 
 @media screen and (max-width:576px) {
@@ -123,12 +135,21 @@ main{
         width: 80%;
        padding: 20px 40px;
     }
-    nav, .first-section{
+    nav, .first-section, .facts-container, .sponsors-img{
         flex-direction: column;
         padding: 20px;
     }
+    .sponsors-img img{
+        width: 165px;
+    }
+    .sponsors-img{
+        gap: 40px;
+    }
     .team-img-container{
         grid-template-columns: 1fr;
+    }
+    .div{
+        padding: 20px 20px 0px 20px;
     }
     .team-title{
         padding-left: 5px;
@@ -136,6 +157,9 @@ main{
     }
     .first-paragraph{
         padding: 10px;
+    }
+    .facts-container{
+        padding-top: 0px;
     }
     nav a{
         padding-left: 20px;
@@ -148,6 +172,12 @@ main{
     }
     nav{
         flex-direction: column;
+    }
+    .div{
+        padding: 20px;
+    }
+    .facts-container{
+        gap: 20px;
     }
     .first-section{
         flex-direction: column-reverse;
